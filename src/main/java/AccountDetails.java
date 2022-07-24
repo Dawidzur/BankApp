@@ -26,4 +26,12 @@ public class AccountDetails {
         System.out.println("Your account balance is " + balance);
 
     }
+
+    public void deposit(){
+        System.out.println("Ile pieniedzy ma byc wyplacone");
+        long pieniadze;
+        balance = pieniadze + balance;
+
+    }
+
 }
