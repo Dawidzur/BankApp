@@ -10,12 +10,16 @@ public class BankingApp {
         account.createAccount();
         int inputNumber;
         do{
+            inputNumber = scanner.nextInt();
             switch(inputNumber){
                 case 1:
                     account.showAccount();
                     break;
                 case 2:
                     account.deposit();
+                    break;
+                case 3:
+                    account.withdrawal();
                     break;
             }
         }while(inputNumber != 4);

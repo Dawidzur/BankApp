@@ -27,11 +27,23 @@ public class AccountDetails {
 
     }
 
-    public void deposit(){
+    public void deposit() {
         System.out.println("Ile pieniedzy ma byc wyplacone");
         long pieniadze;
+        pieniadze = scanner.nextLong();
         balance = pieniadze + balance;
-
     }
+        public void withdrawal () {
+            System.out.println("Jaka kwote wyplacasz?");
+            long pieniadze;
+            pieniadze = scanner.nextLong();
+            if (balance < pieniadze) {
+                System.out.println("Brak wystarczajacych srodkow");
+            } else {
+                balance = balance - pieniadze;
+            }
+        }
+
+
 
 }
